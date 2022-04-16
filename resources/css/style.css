@@ -1,0 +1,222 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    color:#000;
+    font-family:'Playfair Display', 'Times New Roman', serif ;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+}
+
+.row{
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
+
+/******CABEÇALHO******/
+
+.topo{
+    padding-top: 10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+.logo{
+    flex-basis:100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+a,
+ul,
+li{
+    text-decoration: none;
+    list-style: none;
+    color:#F2C2CB;
+    
+}
+
+.menu-navegacao{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-navegacao li a{
+    margin-left: 20px;
+    transition: border 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+
+.menu-navegacao li a:hover{
+    background-color: #F2C2CB;
+    border-radius: 50px;
+    color:#261416;
+}
+
+
+header{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0,0,0,0.5)),
+        url(img/background2.png);
+    height: 75vh;
+    background-size:cover;
+    background-position:center; 
+}
+
+h1{
+    color: #FFF;
+    margin:0;
+    padding-bottom: 20px;
+    width: 40%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height:145%; 
+    word-spacing: 2px; 
+    letter-spacing: 1px; 
+    display:flex;
+    flex-wrap:wrap;
+    flex-shrink: 1;    
+    text-transform: uppercase;
+}
+
+.hero-text-box{
+    margin-top: 50px;
+    max-width:1200px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-content:space-around;
+    
+    
+    
+}
+.btn:link,
+.btn:visited{
+    width: 190px;
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    border-radius: 100px;
+    text-align: center;
+}
+.btn-full:link,
+.btn-full:visited{
+    text-align: center;
+    padding:10px;
+    border: 1px solid #F2C2CB;
+    background-color: #F2C2CB;
+    color:#261416;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:hover{
+    background-color: #261416;
+    color:#F2C2CB;
+    border: 1px solid #261416;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    padding: 10px;
+    border: 1px solid #F2C2CB;
+    color: #F2C2CB;
+}
+.btn-ghost:hover{
+    color:#261416;
+    border: 1px solid #261416;
+}
+
+/*Definições da área de features*/
+
+section{
+    padding: 50px 0;
+}
+
+ion-icon{
+    color:#261416;
+    font-size:200%;
+    margin-bottom: 10px;   
+}
+
+.box{
+    width: 100%;
+    text-align: center;
+}
+
+h3{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align:center;
+    margin-bottom:25px;
+    font-weight: 300;
+}
+
+h2::after{
+   content:" ";
+   height: 2px;
+   width: 100px;
+   display: block;
+   background-color: #F2C2CB;
+   margin: 0 auto;
+   margin-top: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.long-copy{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    line-height: 145%;
+}
+
+/*Define as propriedades da galeria de fotos*/
+
+.images-showcase li{
+    width: 25%;
+    float: left;
+    overflow:hidden;
+}
+
+.photo img{
+    width: 100%;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    filter: grayscale(1);
+}
+
+.photo img:hover{
+    width: 100%;
+    transform: scale(1.03);
+    filter: none;
+}
+
+.col p{
+    line-height:135%; 
+    word-spacing: 2px; 
+    text-align: justify;
+}
